@@ -1,5 +1,5 @@
 # skol
-dis is da scool stuff
+dis is da cool stuff
 :)(:
 
 warcrimes
