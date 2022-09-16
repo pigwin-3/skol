@@ -17,8 +17,6 @@ Brukeren er veldig intresert i krig og historien bak land. Brukeren
 * gografi
 * krig
 
----
----
 ## Applikasjon
 
 #### Hva er applikasjonen?
@@ -30,8 +28,6 @@ en app som spør spørsmål noen av dem er sanne og noen er løyn brueren skal v
     * om du velger øve kommer vil den samle opp 10 spørsmål fra sql databasen og etter hvert spørsmål vil den komme med en forklaring.
     * om spilleren velger spill kommer så skaffer den seg 10 spørsmål og en timer og da er det om å gjøre å gjøre det så fort som mulig for å komme seg på leaderbordet
 
----
----
 ## Fremgangsmøte
 
 ### sql
@@ -49,11 +45,12 @@ theme
 qn-(3 bokstaver som beskriver (feks - flagg = flg))
 | qnID(int) | qn(varchar) | img(varchar) | srcimg(varchar) |
 |-|-|-|-|
+| spørsmålets id | spørsmålet | bilde somtilhører spørsmålet | hvor bilde er tatt fra |
 #### spørsmål svar
 qn-ans-(3 bokstaver som beskriver (feks - flagg = flg))
 | qnid(int) | fact(varchar) | srcfact(varchar) |
-|-----------|---------------|------------------|
-
+|-|-|-|
+| linker sanneb qn-___ og denne tabelen | fakta for spørsmålet | hvor informasjonen er hentet fra |
 ---
 ### node js
 
@@ -63,3 +60,14 @@ skal kun brukes til å hente data fra sql databasen og sende ut json filer
 
 ---
 ### html css js
+all frontend greier (bruker node js for backend for å hente spørsmål etc)
+
+---
+### bildesotering
+bilder får en standard plasering og navn basert på hvor de hører til
+
+img/qn-___/qnid.webp
+
+97.17% av alle browsere suporter webp og er 26% mindre en png bilder 25-34% mindre en jpg. 
+
+alle bilder skal være firkanta og max 512 pixler stor
