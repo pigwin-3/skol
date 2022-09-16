@@ -52,6 +52,10 @@ qn-ans-(3 bokstaver som beskriver (feks - flagg = flg))
 |-|-|-|
 | linker sanneb qn-___ og denne tabelen | fakta for spørsmålet | hvor informasjonen er hentet fra |
 ---
+
+| time(int) | name(varchar) |
+|-|-|
+| tid i sekunder | navnet til spilleren |
 ### node js
 
 skal kun brukes til å hente data fra sql databasen og sende ut json filer
