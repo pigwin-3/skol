@@ -1,32 +1,65 @@
 
-# navn
+# feilinfo
 
 ## Behovsanalyse
 
-* behov
+* krigspill?
+* historie?
 
 #### Hvilke utfordringer har brukeren?
 
-* utfordring
+* ingen utfordringer å ta til hånd for et slik spill
 
 #### Hvilke interesser har brukeren?
+Brukeren er veldig intresert i krig og historien bak land. Brukeren
 
-* interesse
+* historie
+* gografi
+* krig
 
+---
+---
 ## Applikasjon
 
 #### Hva er applikasjonen?
 
-forklar
-* ting og tang
+en app som spør spørsmål noen av dem er sanne og noen er løyn brueren skal velge om det er sant eller en løyn brukeren skal prøve å svare på så 10 tilfeldig trukket spørsmål på så kort tid som mulig.
+1. appen åpner til en meny av katagorier (feks historie, land, engelsk etc) 
+2. du kan deretter velge et tema inafor der (feks historie -> krig, utforsking, personer)
+3. nå kommer opp en side hvor du kan velge mellom å øve eller spill
+    * om du velger øve kommer vil den samle opp 10 spørsmål fra sql databasen og etter hvert spørsmål vil den komme med en forklaring.
+    * om spilleren velger spill kommer så skaffer den seg 10 spørsmål og en timer og da er det om å gjøre å gjøre det så fort som mulig for å komme seg på leaderbordet
 
-
+---
+---
 ## Fremgangsmøte
 
-#### exempel php/node/js
-hvordan bruker jeg hvertøyet
+### sql
+#### katagorier
+catagory
+| cataid(int) | navn(varchar) |
+|-|-|
+| katogori iden | navnet til katagorien |
+##### tema
+theme
+| cataid(int) | themenem(varchar) | qn(varchar) |
+|-|-|-|
+| catagori iden for å linke sammen temaene og katagorien | nanet til temat | linker til qn-___ tabellen |
+#### spørsmål
+qn-(3 bokstaver som beskriver (feks - flagg = flg))
+| qnID(int) | qn(varchar) | img(varchar) | srcimg(varchar) |
+|-|-|-|-|
+#### spørsmål svar
+qn-ans-(3 bokstaver som beskriver (feks - flagg = flg))
+| qnid(int) | fact(varchar) | srcfact(varchar) |
+|-----------|---------------|------------------|
 
-## implemetasjoner
-(hva den ternger)
-- [x] ferdig med dette
-- [ ] ikke ferdig med denne
+---
+### node js
+
+skal kun brukes til å hente data fra sql databasen og sende ut json filer
+
+(all)hoveddelen av prosesering skal sje på brukerns maskin
+
+---
+### html css js
