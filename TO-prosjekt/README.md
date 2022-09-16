@@ -52,7 +52,8 @@ qn-ans-(3 bokstaver som beskriver (feks - flagg = flg))
 |-|-|-|
 | linker sanneb qn-___ og denne tabelen | fakta for spørsmålet | hvor informasjonen er hentet fra |
 ---
-
+#### leadertavle
+lb-(3 bokstaver som beskriver (feks - flagg = flg))
 | time(int) | name(varchar) |
 |-|-|
 | tid i sekunder | navnet til spilleren |
