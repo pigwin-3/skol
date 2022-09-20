@@ -11,8 +11,6 @@ con.connect(function(err) {
   if (err) throw err;
   console.log("Connected!");
   var sql = "INSERT INTO `elev` (`ElevID`, `Fornavn`, `Etternavn`, `programfag`, `Hobby`, `Kjonn`, `data`) VALUES (NULL, 'test', 'test', '3', 'test', 'test', '1')";
-  var sql = "UPDATE `elev` SET Etternavn = testson WHERE Fornavn = 'test'";
-  var sql = "DELETE FROM `elev` WHERE Fornavn = 'test'";
   con.query(sql, function (err, result) {
     if (err) throw err;
     console.log("1 record inserted then edited then deleted");
