@@ -4,33 +4,41 @@
         <title>egg</title>
         <meta charset="utf8">
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/table.js"></script>
     </head>
 <body>
 <center>
 <h1>EGG</h1>
 <h2>find</h2>
-    <form action="javascript:getRequest()">
+  <form action="javascript:getRequest()">
     <label for="test">test:</label><br>
     <input type="text" id="test" name="test"><br>
     <input type="submit" value="Submit">
   </form> 
-<h2>delete</h2>
-  <script src="js/get_request.js"></script>
+  <div id="logger1"></div>
+  <h2>delete</h2>
   <form action="javascript:delRequest()">
     <label for="test.2">test:</label><br>
     <input type="text" id="test.2" name="test"><br>
     <input type="submit" value="Submit">
-  </form> 
+  </form>
+  <div id="logger2"></div> 
   <h2>optater</h2>
-  <script src="js/get_request.js"></script>
-  <form action="javascript:delRequest()">
-    <label for="test.3">test:</label><br>
+  <form action="javascript:updRequest()">
+    <label for="test.3">test(ikke endrebar):</label><br>
     <input type="text" id="test.3" name="test"><br>
+    <label for="test.4">test2:</label><br>
+    <input type="text" id="test.4" name="test"><br>
+    <label for="test.5">test3:</label><br>
+    <input type="text" id="test.5" name="test"><br>
+    <label for="test.6">test4:</label><br>
+    <input type="text" id="test.6" name="test"><br>
     <input type="submit" value="Submit">
   </form> 
-  <script src="js/get_request.js"></script>
 
-<img src="egg.jpg" alt="egg" class="egg">
+  <script src="js/get_request.js"></script>
+  <div id="logger3"></div>
+
 </center>
 </body>
 </html>
