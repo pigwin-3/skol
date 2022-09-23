@@ -1,6 +1,6 @@
-
 # feilinfo
-
+## et spill om feilinformasjon
+---
 ## Behovsanalyse
 
 * krigspill?
@@ -76,3 +76,19 @@ img/qn-___/qnid.webp
 97.17% av alle browsere suporter webp og er 26% mindre en png bilder 25-34% mindre en jpg. 
 
 alle bilder skal være firkanta og max 512 pixler stor
+## gjennomgang
+### hovedside
+her kan du velge hvilken type fag du vil drive med
+![bilde av hovedsiden](READMEbilder/hovedside.png "hovedside")
+### katgori velging
+her kan du velge hvilken type katogorogi du vil drive med innafor faget
+![bilde av hovedsiden](READMEbilder/katgori.png "hovedside")
+### spillsiden
+her velger du typen spill du vil spille om du vil øve eller spille for poeng
+![bilde av hovedsiden](READMEbilder/spillside.png "hovedside")
+### spørsmålet
+her kan du se en teori også skal spilleren velge om den tror at det er sant eller falskt.
+![bilde av hovedsiden](READMEbilder/sporsmol.png "hovedside")
+### hovedside
+her kan du velge hvilken type katogorogi du vil drive med
+![bilde av hovedsiden](READMEbilder/hovedside.png "hovedside")
