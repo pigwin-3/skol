@@ -5,9 +5,11 @@
         <meta charset="utf8">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/table.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 <body>
-<center>
+<div id="e">
+  <center>
 <h1>EGG</h1>
 <h2>find</h2>
   <form action="javascript:getRequest()">
@@ -35,10 +37,15 @@
     <input type="text" id="test.6" name="test"><br>
     <input type="submit" value="Submit">
   </form> 
-
-  <script src="js/get_request.js"></script>
   <div id="logger3"></div>
 
+  <script src="js/get_request.js"></script>
+
+  <form action="javascript:tabl()">
+    <input type="submit" value="Submit">
+  </form> 
+  <table id="Table"></table>
 </center>
+</div>
 </body>
 </html>
