@@ -66,6 +66,21 @@ app.get('/upd/:id', function(req, res){
   });
 });
 
+app.get('/add/:tes/:tes2/:tes3', function(req, res){
+  // res.send('id: ' + req.params.id); 
+  var nem = req.params.tes
+  var nem2 = req.params.tes2
+  var nem3 = req.params.tes3
+  var sql4 = "INSERT INTO test.test1 (`test2`, `test3`, `test4`) VALUES ('" + nem + "','" + nem2 + "','" + nem3 + "')";
+  con.query(sql4, function (err, result) {
+    if (err){
+      res.send("failed to get gud " + sql)
+    }
+    console.log("test", result);
+    res.send(result)
+  });
+});
+
 app.listen(port, () => {
   console.log(`jeg har mindre en ${port} hjerneseller`)
 })

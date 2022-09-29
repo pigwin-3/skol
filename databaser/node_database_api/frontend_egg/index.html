@@ -18,6 +18,8 @@
     <input type="submit" value="Submit">
   </form> 
   <div id="logger1"></div>
+  <table id="TableFind"></table>
+  
   <h2>delete</h2>
   <form action="javascript:delRequest()">
     <label for="test.2">test:</label><br>
@@ -25,6 +27,8 @@
     <input type="submit" value="Submit">
   </form>
   <div id="logger2"></div> 
+  <table id="TableDel"></table>
+
   <h2>optater</h2>
   <form action="javascript:updRequest()">
     <label for="test.3">test(ikke endrebar):</label><br>
@@ -39,13 +43,26 @@
   </form> 
   <div id="logger3"></div>
 
-  <script src="js/get_request.js"></script>
+  <h2>legg til data</h2>
+  <form action="javascript:addRequest()">
+    <label for="test.7">test2:</label><br>
+    <input type="text" id="test.7" name="test"><br>
+    <label for="test.8">test3:</label><br>
+    <input type="text" id="test.8" name="test"><br>
+    <label for="test.9">test4:</label><br>
+    <input type="text" id="test.9" name="test"><br>
+    <input type="submit" value="Submit">
+  </form> 
+  <div id="logger4"></div>
 
+  <h2>hele tabbelen</h2>
   <form action="javascript:tabl()">
     <input type="submit" value="Submit">
   </form> 
   <table id="Table"></table>
 </center>
+
+<script src="js/get_request.js"></script>
 </div>
 </body>
 </html>
