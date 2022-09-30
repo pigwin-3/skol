@@ -92,3 +92,36 @@ her kan du se en teori også skal spilleren velge om den tror at det er sant ell
 ### sanheten
 om du spiller øve vil du få fakta om spørsmålet etter du svarte
 ![bilde av factaside](READMEbilder/sanheten.png "factaside")
+
+## tasklist
+
+### frontend
+- [x] lage en plan
+- [ ] css + html
+    - [ ] Hovedside
+    - [ ] katagori side
+    - [ ] spillside
+    - [ ] spørsmål side
+    - [ ] facta side
+- [ ] js (endring av html css kan skje her) kobling til backend
+    - [ ] Hovedside
+    - [ ] katagori side
+    - [ ] spillside
+    - [ ] spørsmål side
+    - [ ] facta side
+- [ ] ferdig
+### backend
+- [ ] koble til sql
+- [ ] få til å sende ut rigktig data til sidende
+    - [ ] Hovedside
+    - [ ] katagori side
+    - [ ] spillside
+    - [ ] spørsmål side
+    - [ ] facta side
+- [ ] ferdig
+### sql
+- [ ] lage stukturen
+- [ ] legg til et fag
+- [ ] legg til en katagori
+- [ ] spørsmål legg til 100 spørsmål ![](https://geps.dev/progress/0) (med spørsmål, svar og facta (med sorse))
+- [ ] legg til bilder til alle spørsmålende ![](https://geps.dev/progress/0)
