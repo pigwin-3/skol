@@ -31,6 +31,8 @@ en app som spør spørsmål noen av dem er sanne og noen er løyn brueren skal v
 ## Fremgangsmøte
 
 ### sql
+#### navn
+wongly_informed-(språkkode)
 #### katagorier
 catagory
 | cataid(int) | navn(varchar) |
@@ -43,9 +45,9 @@ theme
 | catagori iden for å linke sammen temaene og katagorien | nanet til temat | linker til qn-___ tabellen |
 #### spørsmål
 qn-(3 bokstaver som beskriver (feks - flagg = flg))
-| qnID(int) | qn(varchar) | img(varchar) | srcimg(varchar) |
-|-|-|-|-|
-| spørsmålets id | spørsmålet | bilde somtilhører spørsmålet | hvor bilde er tatt fra |
+| qnID(int) | qn(varchar) | img(varchar) | srcimg(varchar) | altimg(varchar) |
+|-|-|-|-|-|
+| spørsmålets id | spørsmålet | bilde somtilhører spørsmålet | hvor bilde er tatt fra | alt for bildet |
 #### spørsmål svar
 qn-ans-(3 bokstaver som beskriver (feks - flagg = flg))
 | qnid(int) | fact(varchar) | srcfact(varchar) |
@@ -120,8 +122,9 @@ om du spiller øve vil du få fakta om spørsmålet etter du svarte
     - [ ] facta side
 - [ ] ferdig
 ### sql
-- [ ] lage stukturen
-- [ ] legg til et fag
-- [ ] legg til en katagori
+- [x] lage stukturen
+- [x] legg til et fag
+- [x] legg til en katagori
+- [ ] lag 11 dummyspørsmål ![](https://geps.dev/progress/1)
 - [ ] spørsmål legg til 100 spørsmål ![](https://geps.dev/progress/0) (med spørsmål, svar og facta (med sorse))
 - [ ] legg til bilder til alle spørsmålende ![](https://geps.dev/progress/0)
