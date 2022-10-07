@@ -99,19 +99,26 @@ om du spiller øve vil du få fakta om spørsmålet etter du svarte
 
 ### frontend
 - [x] lage en plan
-- [ ] css + html
-    - [ ] Hovedside
-    - [ ] katagori side
-    - [ ] spillside
+- [ ] css + html ![](https://geps.dev/progress/66)
+    - [x] Base
+    - [x] Hovedside
+    - [x] katagori side
+    - [x] spillside
     - [ ] spørsmål side
     - [ ] facta side
 - [ ] js (endring av html css kan skje her) kobling til backend
-    - [ ] Hovedside
-    - [ ] katagori side
-    - [ ] spillside
-    - [ ] spørsmål side
-    - [ ] facta side
-- [ ] ferdig
+    - [ ] Hovedside (for øvingdel)
+    - [ ] katagori side (for øvingdel)
+    - [ ] spillside (for øvingdel)
+    - [ ] spørsmål side (for øvingdel)
+    - [ ] facta side (for øvingdel)
+- [ ] ferdig (med øvingdel)
+    - [ ] Hovedside (for spilldel)
+    - [ ] katagori side (for spilldel)
+    - [ ] spillside (for spilldel)
+    - [ ] spørsmål side (for spilldel)
+    - [ ] facta side (for spilldel)
+- [ ] ferdig (gjenerelt)
 ### backend
 - [ ] koble til sql
 - [ ] få til å sende ut rigktig data til sidende
@@ -125,6 +132,6 @@ om du spiller øve vil du få fakta om spørsmålet etter du svarte
 - [x] lage stukturen
 - [x] legg til et fag
 - [x] legg til en katagori
-- [ ] lag 11 dummyspørsmål ![](https://geps.dev/progress/1)
+- [x] lag 11 dummyspørsmål ![](https://geps.dev/progress/100)
 - [ ] spørsmål legg til 100 spørsmål ![](https://geps.dev/progress/0) (med spørsmål, svar og facta (med sorse))
 - [ ] legg til bilder til alle spørsmålende ![](https://geps.dev/progress/0)
