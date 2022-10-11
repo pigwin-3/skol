@@ -8,8 +8,20 @@ body{
     flex-direction: column;
     font-family: Arial, sans-serif;
     overflow: hidden;
+    background-color: #202020;
+    color: #f5f5f5;
 }
 /* for alt*/
+@keyframes btn-hover {
+    from {
+        border: 2.5px solid #002F99;
+        background-color: #191919;
+    }
+    100% {
+        border: 2.5px solid #0039bf;
+        background-color: #101010;
+    }
+}
 .title{
     text-align: center;
     padding: 1vh;
@@ -21,29 +33,36 @@ body{
     padding-bottom: 0.5vh;
     text-align: center;
 }
-@keyframes btn-hover {
-    from {
-        opacity: 1;;
-    }
-    100% {
-        opacity: 0.9;
-    }
-}
 /* for hovedside, katgori velging, spillsiden */
 .top1 {
     display: block;
-    flex-direction: column;
+    background-color: #191919;
     height: 75vh;
     width: 80%;
     margin: auto;
     overflow: auto;
     scroll-behavior: smooth;
-    border: 2.5px solid black;
+    border: 2.5px solid #002F99;
+    border-radius: 25px;
+    padding-top: 5px;
 }
+/* fjern scrollbar */
+.top1::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.top1 {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 /* for hovedside, katgori velging*/
 .box {
     display: flex;
     justify-content: center;
+    background-color: #202020;
+    border-radius: 10px;
     height: 20vh;
     width: 98%;
     margin: 0.5%;
@@ -55,6 +74,7 @@ body{
     justify-content: center;
     font-size: 7.5vh;
     font-weight: 700;
+    text-align: center;
 }
 .box-info {
     padding: 1%;
@@ -62,7 +82,8 @@ body{
     font-size: 2.5vh;
 }
 .btn {
-    background-color: #a52a2a;
+    background-color: #191919;
+    border: 2.5px solid #002F99;
     font-size: 6vh;
     font-weight: 600;
     height: 8vh;
@@ -71,34 +92,44 @@ body{
     margin-bottom: 4vh;
     text-align: center;
     transition: 0.2s;
+    border-radius: 10px;
 }
 .btn:hover {
     animation: btn-hover 0.1s linear 0s;
-    opacity: 0.9;
+    border: 2.5px solid #0039bf;
+    background-color: #101010;
 }
 /*for spillsiden*/
 .btn2 {
-    background-color: #a52a2a;
+    background-color: #191919;
+    border: 2.5px solid #002F99;
     font-size: 12vh;
     font-weight: 600;
     height: 14vh;
     width: 50%;
     margin: auto;
-    margin-top: 10vh;
+    margin-top: 15vh;
     text-align: center;
     transition: 0.2s;
+    border-radius: 10px;
 }
 .btn2:hover {
     animation: btn-hover 0.1s linear 0s;
-    opacity: 0.9;
+    border: 2.5px solid #0039bf;
+    background-color: #101010;
 }
+
 /* for spørsmålet, sanheten */
 .top2 {
+    display: flex;
+    justify-content: center;
     height: 70vh;
     width: 80%;
+    background-color: #191919;
     margin: auto;
     margin-bottom: 0%;
-    border: 2.5px solid black;
+    border: 2.5px solid #002F99;;
+    border-radius: 25px;
 }
 .low{
     height: 15vh;
@@ -107,6 +138,25 @@ body{
     margin-top: 0%;
 }
 .img{
-    height: 100px;
-    width: 100px;
+    height: 60vh;
+    width: 60vh;
+    max-width: 80%;
+    position: absolute;
+    bottom: 25.9%;
+    border-radius: 5px;
+}
+.imgsrc {
+    position: absolute;
+    background-color: rgba(250, 235, 215, 0.5);
+    color: #101010;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    padding: 1px;
+}
+.statement{
+    text-align: center;
+    padding: 1vh;
+    font-size: 5vh;
+    font-weight: 700;
 }
