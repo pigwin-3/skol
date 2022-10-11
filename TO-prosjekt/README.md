@@ -104,6 +104,14 @@ om du spiller øve vil du få fakta om spørsmålet etter du svarte
     - [x] ~~spillside~~
     - [ ] ~~spørsmål side~~
     - [ ] ~~facta side~~
+- [x] lage en plan2
+- [ ] css + html ![](https://geps.dev/progress/85)~~
+    - [x] Base
+    - [x] Hovedside
+    - [x] katagori side
+    - [x] spillside
+    - [x] spørsmål side
+    - [ ] facta side
 - [ ] js (endring av html css kan skje her) kobling til backend
     - [ ] Hovedside (for øvingdel)
     - [ ] katagori side (for øvingdel)

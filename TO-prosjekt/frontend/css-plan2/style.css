@@ -32,6 +32,7 @@ body{
     margin-top: auto;
     padding-bottom: 0.5vh;
     text-align: center;
+    font-size: 2.5vh;
 }
 /* for hovedside, katgori velging, spillsiden */
 .top1 {
@@ -128,10 +129,12 @@ body{
     background-color: #191919;
     margin: auto;
     margin-bottom: 0%;
-    border: 2.5px solid #002F99;;
+    border: 2.5px solid #002F99;
     border-radius: 25px;
 }
 .low{
+    display: flex;
+    flex-direction: row;
     height: 15vh;
     width: 80%;
     margin: auto;
@@ -144,6 +147,7 @@ body{
     position: absolute;
     bottom: 25.9%;
     border-radius: 5px;
+    background-color: #202020;
 }
 .imgsrc {
     position: absolute;
@@ -153,10 +157,93 @@ body{
     left: 0;
     border-radius: 5px;
     padding: 1px;
+    font-size: 2vh;
 }
 .statement{
     text-align: center;
     padding: 1vh;
     font-size: 5vh;
     font-weight: 700;
+}
+.btntru{
+    border: 2.5px solid #002F99;
+    background-color: #191919;
+    margin-top: 0.50%;
+    border-radius: 15px;
+    height: 95%;
+    width: 100%;
+    margin-left: 2.5%;
+    margin-right: 1.25%;
+    text-align: center;
+    font-size: 11vh;
+    font-weight: 500;
+    color: #1DB000;
+    transition: 0.2s;
+    max-width: 92%;
+}
+.btntru:hover {
+    animation: btn-hover 0.1s linear 0s;
+    border: 2.5px solid #0039bf;
+    background-color: #101010;
+    }
+.btnfal{
+    border: 2.5px solid #002F99;
+    background-color: #191919;
+    margin-top: 0.50%;
+    border-radius: 15px;
+    height: 95%;
+    width: 100%;
+    margin-left: 1.25%;
+    margin-right: 2.5%;
+    text-align: center;
+    font-size: 11vh;
+    font-weight: 500;
+    color: #c00000;
+    transition: 0.2s;
+    max-width: 92%;
+}
+.btnfal:hover {
+animation: btn-hover 0.1s linear 0s;
+border: 2.5px solid #0039bf;
+background-color: #101010;
+}
+
+@media  all and (max-width: 600px) {
+    .low{
+        flex-direction: column;
+        height: 15vh;
+    }
+    .btntru{
+        margin-left: 1.25%;
+        margin-right: 1.25%;
+    }
+    .btnfal{
+        margin-left: 1.25%;
+        margin-right: 1.25%;
+    }
+    .img{
+        height: 50vw;
+        width: 50vw;
+        max-width: 80%;
+        bottom: 39.5%;
+    }
+    .top2 {
+        height: 50vh;
+        width: 90%;
+    }
+    .imgsrc {
+        font-size: 1vh;
+    }
+}
+@media  all and (max-width: 500px) {
+    .img{
+        height: 60vw;
+        width: 60vw;
+    }
+}
+@media  all and (max-width: 400px) {
+    .img{
+        height: 70vw;
+        width: 70vw;
+    }
 }
