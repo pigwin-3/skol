@@ -121,6 +121,25 @@ body{
 }
 
 /* for spørsmålet, sanheten */
+.low{
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 0%;
+}
+.imgsrc {
+    position: absolute;
+    background-color: rgba(250, 235, 215, 0.5);
+    color: #101010;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    padding: 1px;
+    font-size: 2vh;
+}
+/* for spørsmålet*/
 .top2 {
     display: flex;
     justify-content: center;
@@ -132,14 +151,6 @@ body{
     border: 2.5px solid #002F99;
     border-radius: 25px;
 }
-.low{
-    display: flex;
-    flex-direction: row;
-    height: 15vh;
-    width: 80%;
-    margin: auto;
-    margin-top: 0%;
-}
 .img{
     height: 60vh;
     width: 60vh;
@@ -148,16 +159,6 @@ body{
     bottom: 25.9%;
     border-radius: 5px;
     background-color: #202020;
-}
-.imgsrc {
-    position: absolute;
-    background-color: rgba(250, 235, 215, 0.5);
-    color: #101010;
-    bottom: 0;
-    left: 0;
-    border-radius: 5px;
-    padding: 1px;
-    font-size: 2vh;
 }
 .statement{
     text-align: center;
@@ -206,6 +207,32 @@ body{
 animation: btn-hover 0.1s linear 0s;
 border: 2.5px solid #0039bf;
 background-color: #101010;
+}
+/*for sanheten*/
+.low2{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    height: 15vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 0%;
+}
+.top3 {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    height: 70vh;
+    width: 80%;
+    background-color: #191919;
+    margin: auto;
+    margin-bottom: 0%;
+    border: 2.5px solid #002F99;
+    border-radius: 25px;
+}
+.imgbox {
+    height: 80vh;
+    width: 80vh;
 }
 
 @media  all and (max-width: 600px) {

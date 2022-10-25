@@ -1,3 +1,5 @@
+# flyttet til egen repo
+
 # feilinfo
 ## et spill om feilinformasjon
 ---

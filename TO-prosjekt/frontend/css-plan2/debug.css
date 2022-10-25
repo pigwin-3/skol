@@ -4,11 +4,9 @@
 .bottom{
     background-color: blue;
 }
-/* for hovedside, katgori velging, spillsiden */
 .top1 {
     background-color: red;
 }
-/* for hovedside, katgori velging*/
 .box {
     background-color: yellow;
     outline: 1px black;
@@ -19,14 +17,18 @@
 .box-info {
     background-color: aqua;
 }
-/* for spørsmålet, sanheten */
 .top2 {
     background-color: red;
 }
-/* for spørsmålet, sanheten */
 .low{
     background-color: greenyellow;
 }
 .img{
     background-color: #d500c7;
+}
+.top3 {
+    background-color: red;
+}
+.low2{
+    background-color: greenyellow;
 }
