@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:(</title>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h1>Oppgaver Javascript - intro</h1>
+    <h4>Lag en enkel nettside, der du svarer på disse spørsmålene i javascript og html. Ingen krav til et fint design, men greit om du gjør dette. </h4>
+    <h2>Oppgave 1</h2>
+    <h3>a) Hva skriver du i javascript dersom du vil gi variabelen test verdien 8? Hvilken datatype er dette?</h3>
+    <div id="out1"></div>
+    <p>jeg må skrve "var test = 8;" for å få variabelen test til å bli 8. numerne i javascript bilr lagret som IEEE 754 det kan også bli lagret som bigint. <a href="https://javascript.info/number">kilde</a></p>
+
+    <h3>b) Hva skriver du dersom du vil gi variabelen test verdien "testverdi"? Hvilken datatype er dette?</h3>
+    <div id="out2"></div>
+    <p>jeg må skrve "var test = "testverdi"" for å få variabelen test til å bli testverdi. tekst blir lagret som "strings" Jeg tror den teksten er lagret som utf8 men jeg har ikke funnet noe konkret info.</p>
+
+    <h3>c) Hva skriver du dersom du vil regne ut 2 * 3 og sette resultatet inn i variabelen produkt?</h3>
+    <div id="out3"></div>
+    <p>for det ville jeg bare gjort "var produkt = 2 * 3". det er så simpelt som det.</p>
+
+    <h3>d) Hva skriver du dersom du vil regne ut verdien av brøken 2/3 og sette resultatet inn i variabelen broek? (Det kan være lurt å unngå skandinaviske bokstavar som æ, ø og å i variabelnavn.)</h3>
+    <div id="out4"></div>
+    <p>for det ville jeg bare gjort "var produkt = 2 / 3". det er så simpelt som det.</p>
+
+    <h3>e) Lag et program der du tester om alle kommandoene over fungerer vedå bruke console.log() til å skrive ut innholdet av variablene.</h3>
+    <p>dette var litt ubrukelig siden det er der allerede i dokumentet...</p>
+
+    <h2>oppgave 2</h2>
+
+    <h3>a) Lag et program som regner ut arealet av et rektangel. Lengden er 8 og bredden er 8. Skriv dette som funksjon i python. </h3>
+    <div id="out5">svar kommer her</div>
+    <button onclick="rektangel()">Trykk på meg!</button>
+    <p>det var lett...</p>
+
+    <h3>b) Lag et program som regner ut arealet av en trekant. Formelen for en trekant er "A = 1/2 × b × h." Returner arealet i funksjonen</h3>
+    <div id="out6">svar kommer her</div>
+    <input type="text" name="tre1" id="tre1">
+    <input type="text" name="tre2" id="tre2">
+    <button onclick="trekant()">Trykk på meg!</button>
+
+    <h3>c) Lag et program som heter areal(lengde, bredde).<br> Denne har to input-parametre; lengde og bredde. Funksjonen skal regne ut både arealet av et rektangel og en trekant. Men du skal ikke skrive utregningen på nytt. <br> Returner arealet fra rektangel og en trekant. Bruk valgfrie sider som lengde og bredde.</h3>
+    <div id="out7">svar kommer her</div>
+    <input type="text" name="a1" id="a1">
+    <input type="text" name="a2" id="a2">
+    <button onclick="areal()">Trykk på meg!</button>
+    <!--du sa at dette var greit-->
+    <h2>Oppgave 3</h2>
+    <h3>Vi ønsker å lage et program der brukeren av programmet skal oppgi om man er norsk eller svensk (vi later nå som om det ikke er andre alternativer). Dette skal gjøres ved at brukeren skriver inn "n" dersom man er norsk eller "s" dersom man er svensk. Deretter skal programmet skrive enten "Du er norsk." eller "Du er svensk." ut ifr svaret til brukeren. Programmet må starte med å gi instruksjoner til brukeren.</h3>
+    <h3>a) Sjekk ut eksempler på input-funksjonen for python (javascript), ved å søke på nettet. Prøv å forklare hvordan det fungerer.</h3>
+    <p>den bruker iden tilå hente daten fra input feltet ig</p>
+    <h3>b) Bruk IF – ELIF - ELSE setninger til å bestemme om brukeren er norsk, svensk eller dansk. Dette skal være basert på input-verdien fra input(). Dersom brukeren ikke er noen alternativer, skal det printes ut dette.</h3>
+    <div id="out8">svar kommer her</div>
+    <input type="text" name="ns" id="ns">
+    <button onclick="nors()">Trykk på meg!</button>
+    <p>n/s/d</p>
+    <h2>Oppgave 4</h2>
+    <h3>Du ber vennen din tenke på et tall mellom 0 og 50. Så gjetter du på et tall, og vennen din sier om det var rett, eller om tallet du gjettet på var for høyt eller for lavt. Så gjetter du en gang til, og vennen din sier på nytt om tallet er rett, for høyt eller for lavt.</h3>
+    <div id="out9">svar kommer her</div>
+    <div id="highlowdiv"><button onclick="starthighlow()" id="hl">start</button></div>
+    <h2>Oppgave 5</h2>
+    <h3>Hvor mange ganger må du gjette før du kommer fram til rett svar?<br>Hvordan kommer vi raskest fram til rett svar?<br>Nedenfor er det listet opp noen framgangsmåter.Det finnes en systematisk i metode å gjette seg fram til rett svar på som<br>
+        vil være raskest i de fleste tilfeller. Dersom den blir brukt i programmet
+        ovenfor, vil det kunne se slik ut når øvre grense for tall er 50:
+    <ul>
+        <li>Start på 0, og prøv ett og ett tall oppover til du får det rette.</li>
+        <li>Start på 0, og prøv hver hele tier oppover til du kommer for høyt, ta deretter ett og ett tall oppover i det aktuelle tierintervallet.</li>
+        <li>Start på 0, og prøv hvert 20-tall oppover til du kommer for høyt, ta deretter ett og ett tall i det aktuelle 20-intervallet.</li>
+        <li>Start på 0, og prøv hvert 20-tall oppover til du kommer for høyt, prøv deretter tieren midt inne i 20-intervallet for til slutt å ta ett og ett tall i det rette tierintervallet.</li>
+    </ul>
+    Hvilken av disse tror du er best? Den første vil i alle fall ta lang tid ☺</h3>
+    <p>jeg mener at den siste vil være den mest efektive siden den vil gjette så få tal som mulig og fort komme til riktig svar. den vil også scale mye bedre feks om du skal jette et nummer mellom 1 - 1000000. da kan den iniasielt håppe mer.</p>
+    <h3>
+        <table>
+            <tr>
+                <td>Gjetting nr.</td>
+                <td>Gjetting</td>
+                <td>Resultat</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>25</td>
+                <td>Tallet du skrev inn er for høyt.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>12</td>
+                <td>Tallet du skrev inn er for lavt.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>18</td>
+                <td>Tallet du skrev inn er for lavt.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>22</td>
+                <td>Tallet du skrev inn er for høyt.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>20</td>
+                <td>Tallet du skrev inn er for høyt.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>19</td>
+                <td>Du gjettet helt rett!</td>
+            </tr>
+        </table>
+    </h3>
+    <div style="height: 25vh;"></div>
+</body>
+</html>

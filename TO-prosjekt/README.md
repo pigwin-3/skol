@@ -1,5 +1,3 @@
-# flyttet til egen repo
-
 # feilinfo
 ## et spill om feilinformasjon
 ---
@@ -73,46 +71,39 @@ all frontend greier (bruker node js for backend for å hente spørsmål etc)
 
 ---
 ### bildesotering
-bilder får en standard plasering og navn basert på hvor de hører til. bilder kan max vere 102.4 kb
+bilder får en standard plasering og navn basert på hvor de hører til
 
-img/qn-___/qnid.img
+img/qn-___/qnid.webp
+
+97.17% av alle browsere suporter webp og er 26% mindre en png bilder 25-34% mindre en jpg. 
 
 alle bilder skal være firkanta og max 512 pixler stor
 ## gjennomgang
-### ~~hovedside~~
+### hovedside
 her kan du velge hvilken type fag du vil drive med
 ![bilde av hovedsiden](READMEbilder/hovedside.png "hovedside")
-### ~~katgori velging~~
+### katgori velging
 her kan du velge hvilken type katogorogi du vil drive med innafor faget
 ![bilde av katogorogi siden](READMEbilder/katgori.png "katogorogi")
-### ~~spillsiden~~
+### spillsiden
 her velger du typen spill du vil spille om du vil øve eller spille for poeng
 ![bilde av spillside](READMEbilder/spillside.png "spillside")
-### ~~spørsmålet~~
+### spørsmålet
 her kan du se en teori også skal spilleren velge om den tror at det er sant eller falskt.
 ![bilde av spørsmålsiden](READMEbilder/sporsmol.png "spørsmålsiden")
-### ~~sanheten~~
+### sanheten
 om du spiller øve vil du få fakta om spørsmålet etter du svarte
 ![bilde av factaside](READMEbilder/sanheten.png "factaside")
 
 ## tasklist
 
 ### frontend
-- [x] ~~lage en plan~~
-- [ ] ~~css + html ![](https://geps.dev/progress/66)~~ (ble for stygg)
-    - [x] ~~Base~~
-    - [x] ~~Hovedside~~
-    - [x] ~~katagori side~~
-    - [x] ~~spillside~~
-    - [ ] ~~spørsmål side~~
-    - [ ] ~~facta side~~
-- [x] lage en plan2
-- [ ] css + html ![](https://geps.dev/progress/85)~~
-    - [x] Base
-    - [x] Hovedside
-    - [x] katagori side
-    - [x] spillside
-    - [x] spørsmål side
+- [x] lage en plan
+- [ ] css + html ![](https://geps.dev/progress/0)
+    - [ ] Hovedside
+    - [ ] katagori side
+    - [ ] spillside
+    - [ ] spørsmål side
     - [ ] facta side
 - [ ] js (endring av html css kan skje her) kobling til backend
     - [ ] Hovedside (for øvingdel)
