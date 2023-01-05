@@ -3,7 +3,7 @@ body {
     color: #FFFFFF;
 }
 h1 {
-    font-size: 20vw;
+    font-size: 10vw;
     animation: rgb infinite 1s;
 }
 @keyframes rgb {

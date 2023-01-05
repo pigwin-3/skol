@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="unstyle.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <h1>helo virld</h1>
-    <form action="" onsubmit="return false">
-        <input type="text" name="navn" id="navn">
-        <input type="number" name="alder" id="alder">
-        <input type="submit" value="">
+    <h1>hellø wørld</h1>
+    <form action="" onsubmit="hei(navn = document.getElementById('navn').value, document.getElementById('alder').value); return false">
+        <label for="navn">navnet ditt</label><br>
+        <input type="text" name="navn" id="navn"><br>
+        <label for="alder">når ble du født</label><br>
+        <input type="number" name="alder" id="alder"><br>
+        <button type="submit">submit</button>
     </form>
+    <div id="navnout">hei</div>
+    <br><br><br><br><br>
+    <h2>rektangel</h2>
+    <div id="rektout">test</div>
 </body>
 </html>
