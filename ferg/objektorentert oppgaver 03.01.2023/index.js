@@ -47,4 +47,8 @@ let rektangel = new Rektangel('3', '2');
 console.log(rektangel.l + ' ' + rektangel.b + ' ' + rektangel.o + ' ' + rektangel.a);
 document.getElementById('rektout').innerHTML = "rektanglet har lengden " + rektangel.l + " og bredden " + rektangel.b + "<br>" + "arealet til rektanglet er " + rektangel.a + "<br> omkretset til rektangelen er " + rektangel.o
 
-//javascript methods er esensielt functions inni en class ig
+function updater(L, B) {
+    let rektangel = new Rektangel(L, B);
+    console.log(rektangel.l + ' ' + rektangel.b + ' ' + rektangel.o + ' ' + rektangel.a);
+}
+updater(21, 40)
